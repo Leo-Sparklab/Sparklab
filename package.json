@@ -4,6 +4,7 @@
   "description": "This is a dummy package.json file created by Prepros to manage packages with NPM. You can edit this file to add your own information.",
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "bs5-lightbox": "^1.8.3",
     "html5-boilerplate-latest": "^5.3.0-C",
     "owl.carousel": "^2.3.4"
   }
