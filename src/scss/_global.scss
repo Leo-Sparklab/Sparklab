@@ -31,17 +31,37 @@ header {
 .owl-carousel {
 	.owl-item {
 		position : relative;
+		margin-bottom: 1em;
 	}
 	.img-desc {
 		position : absolute;
-		bottom : -0.5em;
-		left : auto;
-		right : auto;
-		padding : 1em;
+		bottom : -1em;
+		left : 1em;
+		right : 1em;
+		padding : 0.5em;
 		text-transform: uppercase;
 		background-color : $darkblue;
 		color : $yellow;
 		font-weight: bold;
+	}
+	.owl-nav {
+		font-size: 4em;
+	}
+	.owl-prev {
+		position: absolute;
+		top: 0;
+		left: -1em;
+		bottom: 0;
+	}
+	.owl-next {
+		position: absolute;
+		top: 0;
+		right: -1em;
+		bottom: 0;
+	}
+	.owl-nav .owl-prev.disabled,
+	.owl-nav .owl-next.disabled, {
+		color: $gray-600;
 	}
 }
 

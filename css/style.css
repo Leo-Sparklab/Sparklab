@@ -7942,17 +7942,37 @@ header {
 
 .owl-carousel .owl-item {
   position: relative;
+  margin-bottom: 1em;
 }
 .owl-carousel .img-desc {
   position: absolute;
-  bottom: -0.5em;
-  left: auto;
-  right: auto;
-  padding: 1em;
+  bottom: -1em;
+  left: 1em;
+  right: 1em;
+  padding: 0.5em;
   text-transform: uppercase;
   background-color: #242B63;
   color: #F6AB2A;
   font-weight: bold;
+}
+.owl-carousel .owl-nav {
+  font-size: 4em;
+}
+.owl-carousel .owl-prev {
+  position: absolute;
+  top: 0;
+  left: -1em;
+  bottom: 0;
+}
+.owl-carousel .owl-next {
+  position: absolute;
+  top: 0;
+  right: -1em;
+  bottom: 0;
+}
+.owl-carousel .owl-nav .owl-prev.disabled,
+.owl-carousel .owl-nav .owl-next.disabled {
+  color: #6c757d;
 }
 
 footer {
