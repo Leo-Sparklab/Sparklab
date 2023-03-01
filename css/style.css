@@ -7940,6 +7940,21 @@ header {
   background-color: #F6AB2A;
 }
 
+.owl-carousel .owl-item {
+  position: relative;
+}
+.owl-carousel .img-desc {
+  position: absolute;
+  bottom: -0.5em;
+  left: auto;
+  right: auto;
+  padding: 1em;
+  text-transform: uppercase;
+  background-color: #242B63;
+  color: #F6AB2A;
+  font-weight: bold;
+}
+
 footer {
   color: #fff;
 }

@@ -1,0 +1,52 @@
+// Page header
+header {
+	color : $white;
+}
+
+
+// Page
+
+.text-intro {
+	font-size : 1.3em;
+}
+
+.section-title {
+	display : inline-block;
+	text-transform : uppercase;
+	font-weight : bold;
+	font-size : 3em;
+	margin : 1em auto;
+	
+	&:after {
+		content : "";
+		display: block;
+		height: 2px;
+		width : 80%;
+		margin : 0 auto;
+		background-color : $yellow;
+	}
+}
+
+// Slider Style
+.owl-carousel {
+	.owl-item {
+		position : relative;
+	}
+	.img-desc {
+		position : absolute;
+		bottom : -0.5em;
+		left : auto;
+		right : auto;
+		padding : 1em;
+		text-transform: uppercase;
+		background-color : $darkblue;
+		color : $yellow;
+		font-weight: bold;
+	}
+}
+
+// Footer
+
+footer {
+	color : $white;
+}
