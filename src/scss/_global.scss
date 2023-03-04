@@ -1,21 +1,11 @@
-// Page header
-header {
-	color : $white;
-}
-
-
 // Page
-
-.text-intro {
-	font-size : 1.3em;
-}
 
 .section-title {
 	display : inline-block;
 	text-transform : uppercase;
 	font-weight : bold;
-	font-size : 3em;
 	margin : 1em auto;
+	font-size: 2.4em;
 	
 	&:after {
 		content : "";
@@ -23,7 +13,7 @@ header {
 		height: 2px;
 		width : 80%;
 		margin : 0 auto;
-		background-color : $yellow;
+		background-color : var(--bs-yellow);
 	}
 }
 
@@ -41,7 +31,7 @@ header {
 		padding : 0.5em;
 		text-transform: uppercase;
 		background-color : $darkblue;
-		color : $yellow;
+		color : var(--bs-yellow);
 		font-weight: bold;
 	}
 	.owl-nav {

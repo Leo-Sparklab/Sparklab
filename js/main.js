@@ -7,13 +7,13 @@ $(document).ready(function() {
 		responsive:{
 			0:{
 				items:1,
-				nav:true
+				nav:false
 			},
-			600:{
+			576:{
 				items:3,
 				nav:false
 			},
-			1000:{
+			992:{
 				items:5,
 				nav:true,
 				loop:false

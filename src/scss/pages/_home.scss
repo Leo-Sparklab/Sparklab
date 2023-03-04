@@ -11,17 +11,24 @@
 		
 		.baseline {
 			display : inline-block;
-			text-transform : uppercase;
 			font-size : 1.6em;
-			border-bottom : 2px solid $yellow;
+			border-bottom : 2px solid var(--bs-yellow);
 			margin : 1em 0;
 		}
 	}
 	
-	section {
-		padding : 5% 0;
-	
+}
+
+#offres {
+	h4 {
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: var(--bs-yellow);
+		padding: 0.2em 0.3em;
+
+		@extend .rounded;
+		
 	}
-	
 }
 
