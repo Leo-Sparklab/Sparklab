@@ -59,3 +59,8 @@
 //Plugin
 @import "../../node_modules/owl.carousel/src/scss/owl.carousel";
 @import "../../node_modules/owl.carousel/src/scss/owl.theme.default";
+
+$fa-font-path: "../../font";
+@import "../../node_modules/fontawesome/scss/fontawesome";
+@import "../../node_modules/fontawesome/scss/solid";
+@import "../../node_modules/fontawesome/scss/brands";
