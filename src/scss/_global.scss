@@ -17,6 +17,28 @@
 	}
 }
 
+// Title
+
+.title-btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: var(--bs-yellow);
+	padding: 0.2em 0.3em;
+	@extend .rounded;
+	
+}
+
+// Button custom
+
+.btn.btn-primary{
+
+	&:hover {
+		background-color: var(--bs-yellow);
+		color: var(--bs-primary);
+	}
+}
+
 // Slider Style
 .owl-carousel {
 	.owl-item {
@@ -56,7 +78,3 @@
 }
 
 // Footer
-
-footer {
-	color : $white;
-}

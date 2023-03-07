@@ -19,16 +19,5 @@
 	
 }
 
-#offres {
-	h4 {
-		display: inline-block;
-		text-transform: uppercase;
-		font-weight: bold;
-		background-color: var(--bs-yellow);
-		padding: 0.2em 0.3em;
 
-		@extend .rounded;
-		
-	}
-}
 

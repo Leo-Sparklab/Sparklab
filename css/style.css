@@ -4921,7 +4921,7 @@ progress {
   pointer-events: auto !important;
 }
 
-.rounded, #offres h4, #offres .h4 {
+.rounded, .title-btn {
   border-radius: var(--bs-border-radius) !important;
 }
 
@@ -7932,6 +7932,19 @@ progress {
   background-color: var(--bs-yellow);
 }
 
+.title-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--bs-yellow);
+  padding: 0.2em 0.3em;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--bs-yellow);
+  color: var(--bs-primary);
+}
+
 .owl-carousel .owl-item {
   position: relative;
   margin-bottom: 1em;
@@ -7967,10 +7980,6 @@ progress {
   color: #6c757d;
 }
 
-footer {
-  color: #fff;
-}
-
 #home header {
   padding: 5% 0;
 }
@@ -7982,14 +7991,6 @@ footer {
   font-size: 1.6em;
   border-bottom: 2px solid var(--bs-yellow);
   margin: 1em 0;
-}
-
-#offres h4, #offres .h4 {
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: var(--bs-yellow);
-  padding: 0.2em 0.3em;
 }
 
 /*

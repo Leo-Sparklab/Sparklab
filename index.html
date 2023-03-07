@@ -7,14 +7,14 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-		<link rel="manifest" href="/icon/site.webmanifest">
-		<link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5">
-		<link rel="shortcut icon" href="/icon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/site.webmanifest">
+		<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="icon/favicon.ico">
 		<meta name="msapplication-TileColor" content="#2b5797">
-		<meta name="msapplication-config" content="/icon/browserconfig.xml">
+		<meta name="msapplication-config" content="icon/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
         <!-- Place favicon.ico in the root directory -->
 
@@ -43,7 +43,7 @@
 
         <main>
 		
-			<section>
+			<section id="sectionIntro">
 				<div class="my-4 pt-5 text-center container">
 					<p class="fs-4">				
 						Le SparkLab est un laboratoire de fabrication numérique ouvert à tous ! <br/>
@@ -52,15 +52,18 @@
 						Notre équipe vous accueille et vous accompagne pour imaginer, apprendre et créer grâce à des outils uniques<br/>
 						<b>La seule limite ici ? Votre imagination !</b>
 					</p>
+
+
 					<div class="text-center my-5">
 						<a class="btn btn-primary text-uppercase fs-3" href="https://youtu.be/b0jqPvpn3sY" data-toggle="lightbox">
 							Visite en 360°
 						</a>
 					</div>
+
 				</div>
 			</section>
 
-			<section id="offres" class="pb-5">
+			<section id="sectionOffre" class="pb-5">
 				<div class="text-center container">
 					<h3 class="section-title">Mais qu'est ce qu'on y fait exactement ?</h3>
 
@@ -69,9 +72,9 @@
 							<img src="img/offres-de-service_atelier.jpg" class="img-fluid">
 						</div>
 						<div class="col-md-7 col-xl-4 fs-4 text-md-start mb-4">
-							<h4 class="">Des ateliers</h4>
+							<h4 class="title-btn">Des ateliers</h4>
 							</p>Des annimations ludiques pour tout les ages ! </p>
-							<a class="btn btn-sm btn-primary text-uppercase" href="pdf">Visualisez notre catalogue !</a>
+							<a class="btn btn-sm btn-primary text-uppercase" href="/pdf/sparklab_atelier-2023.pdf">Visualisez notre catalogue !</a>
 						</div>
 					</div>
 
@@ -80,7 +83,7 @@
 							<img src="img/offres-de-service_accompagnement.jpg" class="img-fluid">
 						</div>
 						<div class="col-md-7 col-xl-4 fs-4 text-md-end mb-4">
-							<h4>De l'accompagnement</h4>
+							<h4 class="title-btn">De l'accompagnement</h4>
 							</p>Notre expertise à votre service pour mener à bien vos projets !</p>
 						</div>
 					</div>
@@ -90,7 +93,7 @@
 							<img src="img/offres-de-service_formation.jpg" class="img-fluid">
 						</div>
 						<div class="col-md-7 col-xl-4 fs-4 text-md-start mb-4">
-							<h4>Des formations</h4>
+							<h4 class="title-btn">Des formations</h4>
 							</p>Tout un programme pour maitriser les outils et devenir un as de la fabrication numérique !</p>
 						</div>
 					</div>
@@ -100,9 +103,9 @@
 							<img src="img/offres-de-service_reparation.jpg" class="img-fluid">
 						</div>
 						<div class="col-md-7 col-xl-4 fs-4 text-md-end mb-4">
-							<h4>De la réparation</h4>
+							<h4 class="title-btn">De la réparation</h4>
 							</p>Avec le réseaux des Repair Café, on retape vos affaires</p>
-							<a class="btn btn-primary text-md-uppercase" href="pdf">S'inscrire !</a>
+							<button type="button" class="btn btn-primary text-md-uppercase" data-bs-toggle="modal" data-bs-target="#modalRepairCafe">S'inscrire !</button>
 						</div>
 					</div>
 
@@ -111,15 +114,16 @@
 							<img src="img/offres-de-service_prestation.jpg" class="img-fluid">
 						</div>
 						<div class="col-md-7 col-xl-4 fs-4 text-md-start mb-4">
-							<h4>Des Prestations</h4>
+							<h4 class="title-btn">Des Prestations</h4>
 							</p>Une demande particulière de fabrication ? Nous le réalisons pour vous !</p>
+							<a class="btn btn-primary" href="#sectionContact">Nous contacter !</a>
 						</div>
 					</div>
 
 				</div>
 			</section>
 			
-			<section class="bg-secondary pb-5">
+			<section id="sectionMachines" class="bg-secondary py-5">
 				<div class="container">
 					<div class="text-center">
 						<h3 class="section-title">Nos machines</h3>
@@ -134,46 +138,53 @@
 					  <div class="item"><img src="img/machine-slide_ploteur.jpg" alt="Owl Image"><div class="img-desc text-center">Traceur de découpe</div></div>
 					  <div class="item"><img src="img/machine-slide_embroidery.jpg" alt="Owl Image"><div class="img-desc text-center">Brodeuse numérique</div></div>
 					</div>
+
+					<div class="text-center fs-6 py-4">
+						Matières compatibles, dimensions...<br/>
+						Pour plus de détail, téléchargez la fiche technique <br/>
+						<a class="btn btn-small btn-primary mt-3" href="/pdf/sparklab_fiche-technique.pdf">Fiche Technique</a>
+					</div>
+
 				</div>
 			</section>
 			
-			<section class="bg-primary pb-5">
+			<section id="sectionTarifs" class="bg-primary pb-5">
 				<div class="container">
 					<div class="text-center">
-						<h3 class="section-title text-secondary">Nos Tarifs</h3>
+						<h3 class="section-title text-light">Nos Tarifs</h3>
 					</div>
 					
 					<div class="row mb-3 justify-content-center">
 
 					  <div class="col-sm-6 col-lg-4">
-						<div class="card mb-4 rounded-3 shadow-sm text-center">
-						  <div class="card-header py-3">
-							<h4 class="my-0 fw-normal">Adhésion</h4>
+						<div class="card border-primary mb-4 rounded-3 shadow-sm text-center">
+						  <div class="card-header py-3 bg-warning">
+							<h4 class="my-0 fw-bold">Adhésion</h4>
 						  </div>
 						  <div class="card-body">
-							<h1 class="card-title pricing-card-title">20€<small class="fw-light">/ans</small></h1>
+							<h1 class="card-title pricing-card-title">20€<small class="fw-light text-secondary">/ans</small></h1>
 							<ul class="list-unstyled mt-3 mb-4">
-							  <li>Rejoignez la communauté</li>
-							  <li>Accédez à l'atelier et aux annimations</li>
-							  <li>Travaillez vos fichiers</li>
-							  <li>Bénéficiez de nos conseils</li>
+							  <li>+ Rejoignez la communauté</li>
+							  <li>+ Accédez à l'atelier et aux annimations</li>
+							  <li>+ Travaillez vos fichiers</li>
+							  <li>+ Bénéficiez de nos conseils</li>
 							</ul>
 						  </div>
 						</div>
 					  </div>
 
 					  <div class="col-sm-6 col-lg-4">
-						<div class="card mb-4 rounded-3 shadow-sm text-center">
-						  <div class="card-header py-3">
-							<h4 class="my-0 fw-normal">Location machine</h4>
+						<div class="card border-primary mb-4 rounded-3 shadow-sm text-center">
+						  <div class="card-header py-3 bg-warning">
+							<h4 class="my-0 fw-bold">Location machine</h4>
 						  </div>
 						  <div class="card-body">
-							<h1 class="card-title pricing-card-title">30€<small class="fw-light">/mois</small></h1>
+							<h1 class="card-title pricing-card-title">30€<small class="fw-light text-secondary">/mois</small></h1>
 							<ul class="list-unstyled mt-3 mb-4">
-							  <li>Plus de 10 machines à commandes numérique</li>
-							  <li>Accés à tout l'outillage traditionnel</li>
-							  <li>Accompagnement au prototypage</li>
-							  <li>Formation personnalisé</li>
+							  <li>+ de 10 machines accessible en illimité !</li>
+							  <li>+ tout l'outillage traditionnel</li>
+							  <li>+ Accompagnement au prototypage</li>
+							  <li>+ Formation personnalisé</li>
 							</ul>
 						  </div>
 						</div>
@@ -183,7 +194,7 @@
 				</div>
 			</section>
 
-			<section>
+			<section id="sectionRealisation">
 				<div class="text-center">
 					<h3 class="section-title">Quelques réalisations</h3>
 				</div>
@@ -211,7 +222,7 @@
 
 			</section>
 			
-			<section>
+			<section id="sectionContact">
 				<div class="container-fluid">
 					<div class="text-center">
 						<h3 class="section-title">Nous rencontrer</h3>
@@ -246,8 +257,30 @@
         </main>
 		
 		<footer class="bg-dark">
-			<p>Sparklab</p>
+			<div class="container py-5">
+				<p>Sparklab</p>
+			</div>
 		</footer>
+
+		<!-- Modal Repair Café -->
+		<div class="modal fade" id="modalRepairCafe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		
 		
 
