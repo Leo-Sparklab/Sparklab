@@ -7940,6 +7940,21 @@ progress {
   padding: 0.2em 0.3em;
 }
 
+.text-underline {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.text-underline:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0.4em;
+  height: 3px;
+  width: 3em;
+  background-color: var(--bs-yellow);
+}
+
 .btn.btn-primary:hover {
   background-color: var(--bs-yellow);
   color: var(--bs-primary);
@@ -7978,6 +7993,17 @@ progress {
 .owl-carousel .owl-nav .owl-prev.disabled,
 .owl-carousel .owl-nav .owl-next.disabled {
   color: #6c757d;
+}
+
+.icon-circle i {
+  display: inline-block;
+  text-align: center;
+  color: var(--bs-white);
+  background-color: var(--bs-yellow);
+  width: 1.6em;
+  height: 1.6em;
+  padding-top: 0.3em;
+  border-radius: 50%;
 }
 
 #home header {
